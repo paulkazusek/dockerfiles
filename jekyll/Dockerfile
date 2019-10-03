@@ -10,7 +10,7 @@ RUN apt-get -qq update \
 
 # clean up
 
-RUN apt clean
+RUN apt clean \
     && rm -rf /var/lib/apt/lists/*
 
 # Set the locale
